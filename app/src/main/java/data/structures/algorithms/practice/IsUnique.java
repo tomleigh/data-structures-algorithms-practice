@@ -1,3 +1,4 @@
+package data.structures.algorithms.practice;
 
 
 /* 
@@ -10,6 +11,7 @@
 public class IsUnique {
     // Best case running time: 0(N)
     // Best case space complexity: 0(1)
+    // NOTE: Assuming only ASCII Characters (128)
     public boolean checkIfUnique(String stringToCheck) {
       if(stringToCheck.length() > 128) {
         return false;

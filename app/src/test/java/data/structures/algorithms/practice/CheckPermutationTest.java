@@ -8,35 +8,35 @@ class CheckPermutationTest {
 
     @Test void isPermutationSimple() {
         CheckPermutation checkPermutation = new CheckPermutation();
-        assertEquals(checkPermutation.isPermutation("abcd", "abc"), true);
+        assertTrue(checkPermutation.isPermutation("abcd", "abc"));
     }
 
     @Test void isPermutationReverse() {
         CheckPermutation checkPermutation = new CheckPermutation();
-        assertEquals(checkPermutation.isPermutation("abcd", "cba"), true);
+        assertTrue(checkPermutation.isPermutation("abcd", "cba"));
     }
     @Test void isPermutationSingle() {
         CheckPermutation checkPermutation = new CheckPermutation();
-        assertEquals(checkPermutation.isPermutation("abcd", "a"), true);
+        assertTrue(checkPermutation.isPermutation("abcd", "a"));
     }
     @Test void isPermutationEquivalent() {
         CheckPermutation checkPermutation = new CheckPermutation();
-        assertEquals(checkPermutation.isPermutation("abcd", "abcd"), true);
+        assertTrue(checkPermutation.isPermutation("abcd", "abcd"));
     }
     @Test void isPermutationEquivalentReverse() {
         CheckPermutation checkPermutation = new CheckPermutation();
-        assertEquals(checkPermutation.isPermutation("abcd", "dcba"), true);
+        assertTrue(checkPermutation.isPermutation("abcd", "dcba"));
     }
     @Test void isPermutationLargerSecondString() {
         CheckPermutation checkPermutation = new CheckPermutation();
-        assertEquals(checkPermutation.isPermutation("eab", "abcde"), true);
+        assertTrue(checkPermutation.isPermutation("eab", "abcde"));
     }
     @Test void isPermutationWrong1() {
         CheckPermutation checkPermutation = new CheckPermutation();
-        assertEquals(checkPermutation.isPermutation("abcd", "e"), false);
+        assertFalse(checkPermutation.isPermutation("abcd", "e"));
     }
     @Test void isPermutationWrong2() {
         CheckPermutation checkPermutation = new CheckPermutation();
-        assertEquals(checkPermutation.isPermutation("e", "123"), false);
+        assertFalse(checkPermutation.isPermutation("e", "123"));
     }
 }

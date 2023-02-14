@@ -31,12 +31,10 @@ public class URLify {
         // If a space, replace with '%20' and reduce the number of spaces remaining
         int spaceCount = 0;
         for(int i = 0; i < inputChars.length; i++) {
-            if(inputChars[i] == ' ') {
+            if (inputChars[i] == ' ') {
                 spaceCount++;
             }
         }
-        System.out.println(inputChars);
-        System.out.println(spaceCount);
 
         for(int i = (inputChars.length - 1); i > 0; i--) {
             if(inputChars[i] == ' ') {

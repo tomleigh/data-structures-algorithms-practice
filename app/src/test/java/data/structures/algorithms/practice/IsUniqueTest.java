@@ -6,10 +6,6 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class IsUniqueTest {
 
-    @Test
-    void checkIfUnique() {
-    }
-
     @Test void simpleTestAlphanumeric() {
         IsUnique isUnique = new IsUnique();
         assertTrue(isUnique.checkIfUnique("abcd1234"));

@@ -1,4 +1,4 @@
-# data-structures-algorithms-practice
+# Data Structures & Algorithms Practice
 Practice interview questions from **Cracking the Coding Interview** by __Gayle Laakmann Mcdowell__ 6th Edition.
 
 ## Quick Project Links

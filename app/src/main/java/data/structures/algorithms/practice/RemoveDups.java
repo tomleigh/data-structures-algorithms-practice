@@ -31,8 +31,6 @@ public class RemoveDups {
             fastPointer = fastPointer.next;
             slowPointer = slowPointer.next;
         }
-
         return head;
     }
-
 }
